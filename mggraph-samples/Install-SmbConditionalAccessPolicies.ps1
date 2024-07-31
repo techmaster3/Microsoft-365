@@ -93,7 +93,7 @@ function New-ConditionalAccessPolicy {
 
 $smbCa001 = @"
 {
-    "displayName": "[SMB] 0.01 - Block legacy authentication",
+    "displayName": "CA001 - Block legacy authentication",
     "createdDateTime": null,
     "modifiedDateTime": null,
     "state": "disabled",
@@ -120,7 +120,9 @@ $smbCa001 = @"
             ],
             "excludeUsers": [],
             "includeGroups": [],
-            "excludeGroups": [],
+            "excludeGroups": [
+	    	"Excluded-CA"
+	    ],
             "includeRoles": [],
             "excludeRoles": []
         }
@@ -138,7 +140,7 @@ $smbCa001 = @"
 
 $smbCa002 = @" 
 {
-    "displayName": "[SMB] 0.02 - Require MFA for management",
+    "displayName": "CA002 - Require MFA for Azure Management",
     "createdDateTime": null,
     "modifiedDateTime": null,
     "state": "disabled",
@@ -163,7 +165,9 @@ $smbCa002 = @"
             ],
             "excludeUsers": [],
             "includeGroups": [],
-            "excludeGroups": [],
+            "excludeGroups": [
+	    	"Excluded-CA"
+	    ],
             "includeRoles": [],
             "excludeRoles": []
         }
@@ -181,7 +185,7 @@ $smbCa002 = @"
 
 $smbCa003 = @" 
 {
-    "displayName": "[SMB] 0.03 - Require MFA to register or join devices",
+    "displayName": "CA003 - Require MFA to register or join devices",
     "createdDateTime": null,
     "modifiedDateTime": null,
     "state": "disabled",
@@ -206,7 +210,9 @@ $smbCa003 = @"
                 "GuestsOrExternalUsers"
             ],
             "includeGroups": [],
-            "excludeGroups": [],
+            "excludeGroups": [
+	    	"Excluded-CA"
+	    ],
             "includeRoles": [],
             "excludeRoles": []
         },
@@ -232,7 +238,7 @@ $smbCa003 = @"
 
 $smbCa004 = @" 
 {
-    "displayName": "[SMB] 0.04 - Block unknown or unsupported device platforms",
+    "displayName": "CA004 - Block unknown or unsupported device platforms",
     "createdDateTime": null,
     "modifiedDateTime": null,
     "state": "disabled",
@@ -270,7 +276,9 @@ $smbCa004 = @"
 				"GuestsOrExternalUsers"
 			],
             "includeGroups": [],
-            "excludeGroups": [],
+            "excludeGroups": [
+	    	"Excluded-CA"
+	    ],
             "includeRoles": [],
             "excludeRoles": []
         }
@@ -292,7 +300,7 @@ $smbCa005 = @"
 
 $smbCa101 = @" 
 {
-    "displayName": "[SMB] 1.01 - Require MFA for admins",
+    "displayName": "CA101 - Require MFA for Admins",
     "createdDateTime": null,
     "modifiedDateTime": null,
     "state": "disabled",
@@ -314,7 +322,9 @@ $smbCa101 = @"
             "includeUsers": [],
             "excludeUsers": [],
             "includeGroups": [],
-            "excludeGroups": [],
+            "excludeGroups": [
+	    	"Excluded-CA"
+	    ],
             "includeRoles": [ 
                 "62e90394-69f5-4237-9190-012177145e10",
                 "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
@@ -347,7 +357,7 @@ $smbCa101 = @"
 
 $smbCa201 = @" 
 {
-    "displayName": "[SMB] 2.01 - Require MFA for internals",
+    "displayName": "CA201 - Require MFA for Internals",
     "createdDateTime": null,
     "modifiedDateTime": null,
     "state": "disabled",
@@ -371,7 +381,9 @@ $smbCa201 = @"
             ],
             "excludeUsers": ["GuestsOrExternalUsers"],
             "includeGroups": [],
-            "excludeGroups": [],
+            "excludeGroups": [
+	    	"Excluded-CA"
+	    ],
             "includeRoles": [],
             "excludeRoles": []
         }
@@ -389,7 +401,7 @@ $smbCa201 = @"
 
 $smbCa202 = @" 
 {
-    "displayName": "[SMB] 2.02 - Securing MFA registration for internals",
+    "displayName": "CA202 - Securing MFA registration for internals",
     "createdDateTime": null,
     "modifiedDateTime": null,
     "state": "disabled",
@@ -414,7 +426,9 @@ $smbCa202 = @"
                 "GuestsOrExternalUsers"
             ],
             "includeGroups": [],
-            "excludeGroups": [],
+            "excludeGroups": [
+	    	"Excluded-CA"
+	    ],
             "includeRoles": [],
             "excludeRoles": [
 				"62e90394-69f5-4237-9190-012177145e10"
@@ -442,7 +456,7 @@ $smbCa202 = @"
 
 $smbCa203 = @" 
 {
-    "displayName": "[SMB] 2.03 - Require app protection for Office 365 mobile access",
+    "displayName": "CA203 - Require app protection for Office 365 mobile access",
     "createdDateTime": null,
     "modifiedDateTime": null,
     "state": "disabled",
@@ -472,7 +486,9 @@ $smbCa203 = @"
             ],
             "excludeUsers": ["GuestsOrExternalUsers"],
             "includeGroups": [],
-            "excludeGroups": [],
+            "excludeGroups": [
+	    	"Excluded-CA"
+	    ],
             "includeRoles": [],
             "excludeRoles": []
         }
@@ -490,7 +506,7 @@ $smbCa203 = @"
 
 $smbCa204 = @" 
 {
-    "displayName": "[SMB] 2.04 - Require compliant device for Office 365 desktop access",
+    "displayName": "CA204 - Require compliant device for Office 365 desktop access",
     "createdDateTime": null,
     "modifiedDateTime": null,
     "state": "disabled",
@@ -522,7 +538,9 @@ $smbCa204 = @"
 				"GuestsOrExternalUsers"
 			],
             "includeGroups": [],
-            "excludeGroups": [],
+            "excludeGroups": [
+	    	"Excluded-CA"
+	    ],
             "includeRoles": [],
             "excludeRoles": []
         }
@@ -541,7 +559,7 @@ $smbCa204 = @"
 $smbCa301 = @" 
 
 {
-    "displayName": "[SMB] 3.01 - Require MFA for externals",
+    "displayName": "CA301 - Require MFA for Externals",
     "createdDateTime": null,
     "modifiedDateTime": null,
     "state": "disabled",
@@ -565,7 +583,9 @@ $smbCa301 = @"
             ],
             "excludeUsers": [],
             "includeGroups": [],
-            "excludeGroups": [],
+            "excludeGroups": [
+	    	"Excluded-CA"
+	    ],
             "includeRoles": [],
             "excludeRoles": []
         }
