@@ -120,9 +120,7 @@ $smbCa001 = @"
             ],
             "excludeUsers": [],
             "includeGroups": [],
-            "excludeGroups": [
-	    	"Excluded-CA"
-	    ],
+            "excludeGroups": "Excluded-CA",
             "includeRoles": [],
             "excludeRoles": []
         }
@@ -165,9 +163,7 @@ $smbCa002 = @"
             ],
             "excludeUsers": [],
             "includeGroups": [],
-            "excludeGroups": [
-	    	"Excluded-CA"
-	    ],
+            "excludeGroups": "Excluded-CA",
             "includeRoles": [],
             "excludeRoles": []
         }
@@ -210,9 +206,7 @@ $smbCa003 = @"
                 "GuestsOrExternalUsers"
             ],
             "includeGroups": [],
-            "excludeGroups": [
-	    	"Excluded-CA"
-	    ],
+             "excludeGroups": "Excluded-CA",
             "includeRoles": [],
             "excludeRoles": []
         },
@@ -276,9 +270,7 @@ $smbCa004 = @"
 				"GuestsOrExternalUsers"
 			],
             "includeGroups": [],
-            "excludeGroups": [
-	    	"Excluded-CA"
-	    ],
+            "excludeGroups": "Excluded-CA",
             "includeRoles": [],
             "excludeRoles": []
         }
@@ -295,7 +287,7 @@ $smbCa004 = @"
 "@
 
 $smbCa005 = @" 
-{"grantControls":null,"conditions":{"userRiskLevels":[],"signInRiskLevels":[],"clientAppTypes":["all"],"servicePrincipalRiskLevels":[],"insiderRiskLevels":null,"clients":null,"platforms":null,"locations":null,"times":null,"deviceStates":null,"clientApplications":null,"authenticationFlows":null,"applications":{"includeApplications":["All"],"excludeApplications":[],"includeUserActions":[],"includeAuthenticationContextClassReferences":[],"applicationFilter":null,"networkAccess":null,"globalSecureAccess":null},"users":{"includeUsers":["All"],"excludeUsers":[],"includeGroups":[],"excludeGroups":[],"includeRoles":[],"excludeRoles":[],"includeGuestsOrExternalUsers":null,"excludeGuestsOrExternalUsers":null},"devices":{"includeDeviceStates":[],"excludeDeviceStates":[],"includeDevices":[],"excludeDevices":[],"deviceFilter":{"mode":"include","rule":"device.trustType -ne \"ServerAD\" -or device.isCompliant -ne True"}}},"sessionControls":{"disableResilienceDefaults":null,"applicationEnforcedRestrictions":null,"cloudAppSecurity":null,"continuousAccessEvaluation":null,"secureSignInSession":null,"networkAccessSecurity":null,"globalSecureAccessFilteringProfile":null,"signInFrequency":{"value":1,"type":"hours","authenticationType":"primaryAndSecondaryAuthentication","frequencyInterval":"timeBased","isEnabled":true},"persistentBrowser":{"mode":"never","isEnabled":true}},"displayName":"[SMB] 0.05 - No persistent browser on unmanaged devices"}
+{"grantControls":null,"conditions":{"userRiskLevels":[],"signInRiskLevels":[],"clientAppTypes":["all"],"servicePrincipalRiskLevels":[],"insiderRiskLevels":null,"clients":null,"platforms":null,"locations":null,"times":null,"deviceStates":null,"clientApplications":null,"authenticationFlows":null,"applications":{"includeApplications":["All"],"excludeApplications":[],"includeUserActions":[],"includeAuthenticationContextClassReferences":[],"applicationFilter":null,"networkAccess":null,"globalSecureAccess":null},"users":{"includeUsers":["All"],"excludeUsers":[],"includeGroups":[], "excludeGroups": "Excluded-CA","includeRoles":[],"excludeRoles":[],"includeGuestsOrExternalUsers":null,"excludeGuestsOrExternalUsers":null},"devices":{"includeDeviceStates":[],"excludeDeviceStates":[],"includeDevices":[],"excludeDevices":[],"deviceFilter":{"mode":"include","rule":"device.trustType -ne \"ServerAD\" -or device.isCompliant -ne True"}}},"sessionControls":{"disableResilienceDefaults":null,"applicationEnforcedRestrictions":null,"cloudAppSecurity":null,"continuousAccessEvaluation":null,"secureSignInSession":null,"networkAccessSecurity":null,"globalSecureAccessFilteringProfile":null,"signInFrequency":{"value":1,"type":"hours","authenticationType":"primaryAndSecondaryAuthentication","frequencyInterval":"timeBased","isEnabled":true},"persistentBrowser":{"mode":"never","isEnabled":true}},"displayName":"[SMB] 0.05 - No persistent browser on unmanaged devices"}
 "@
 
 $smbCa101 = @" 
@@ -322,9 +314,7 @@ $smbCa101 = @"
             "includeUsers": [],
             "excludeUsers": [],
             "includeGroups": [],
-            "excludeGroups": [
-	    	"Excluded-CA"
-	    ],
+            "excludeGroups": "Excluded-CA",
             "includeRoles": [ 
                 "62e90394-69f5-4237-9190-012177145e10",
                 "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
@@ -381,9 +371,7 @@ $smbCa201 = @"
             ],
             "excludeUsers": ["GuestsOrExternalUsers"],
             "includeGroups": [],
-            "excludeGroups": [
-	    	"Excluded-CA"
-	    ],
+            "excludeGroups": "Excluded-CA",
             "includeRoles": [],
             "excludeRoles": []
         }
@@ -426,9 +414,7 @@ $smbCa202 = @"
                 "GuestsOrExternalUsers"
             ],
             "includeGroups": [],
-            "excludeGroups": [
-	    	"Excluded-CA"
-	    ],
+            "excludeGroups": "Excluded-CA",
             "includeRoles": [],
             "excludeRoles": [
 				"62e90394-69f5-4237-9190-012177145e10"
@@ -486,9 +472,7 @@ $smbCa203 = @"
             ],
             "excludeUsers": ["GuestsOrExternalUsers"],
             "includeGroups": [],
-            "excludeGroups": [
-	    	"Excluded-CA"
-	    ],
+            "excludeGroups": "Excluded-CA",
             "includeRoles": [],
             "excludeRoles": []
         }
@@ -538,9 +522,7 @@ $smbCa204 = @"
 				"GuestsOrExternalUsers"
 			],
             "includeGroups": [],
-            "excludeGroups": [
-	    	"Excluded-CA"
-	    ],
+            "excludeGroups": "Excluded-CA",
             "includeRoles": [],
             "excludeRoles": []
         }
@@ -583,9 +565,7 @@ $smbCa301 = @"
             ],
             "excludeUsers": [],
             "includeGroups": [],
-            "excludeGroups": [
-	    	"Excluded-CA"
-	    ],
+            "excludeGroups": "Excluded-CA",
             "includeRoles": [],
             "excludeRoles": []
         }
