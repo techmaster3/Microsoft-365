@@ -1,5 +1,6 @@
 ﻿<##################################################################################################
 #
+WARNING: DO NOT USE THIS SCRIPT RIGHT NOW, WORKING OUT AN ISSUE WITH THE OS POLICY -- MORE UPDATES TO COME
 .SYNOPSIS
 This script installs device configuration profiles from JSON:
 01. [SMB] Windows - OS Security Baseline
